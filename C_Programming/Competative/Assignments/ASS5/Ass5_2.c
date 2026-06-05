@@ -1,0 +1,57 @@
+// Write a program which accept number from user and print numbers till that number.
+ 
+//////////////////////////////////////////////////////////
+//
+//  Include required header files
+//
+///////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+///////////////////////////////////////////////////////////
+//
+//  Function name : Display
+//  Input :         int
+//  Output :        void
+//  Description :   print numbers till that number
+//  Date :          30/05/2026
+//  Author :        Aishwarya Mohan Jadhav
+//
+///////////////////////////////////////////////////////////
+void Display(int iNo)
+{
+    int iCnt = 0;
+
+    for(iCnt = 1 ; iCnt <= iNo ; iCnt++)
+    {
+        printf("%d\t", iCnt);
+    }
+    printf("\n");
+}
+
+///////////////////////////////////////////////////////////
+//
+//  Application to display numbers till that number.
+//
+///////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter number : ");
+    scanf("%d", &iValue);
+    
+    Display(iValue);
+
+    return 0;
+}
+
+///////////////////////////////////////////////////////////
+//
+//  Input :     8
+//  Output :    1	2	3	4	5	6	7	8
+//
+//  Complexity : O(n)
+//
+///////////////////////////////////////////////////////////

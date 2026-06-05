@@ -1,0 +1,58 @@
+// Write a program which accept number from user and its number line.
+
+///////////////////////////////////////////////////////////
+//
+//  Include required header files
+//
+///////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+///////////////////////////////////////////////////////////
+//
+//  Function name : Display
+//  Input :         int
+//  Output :        void
+//  Description :   print number line
+//  Date :          30/05/2026
+//  Author :        Aishwarya Mohan Jadhav
+//
+///////////////////////////////////////////////////////////
+
+void Display(int iNo)
+{
+    int iCnt = 0;
+
+    for(iCnt = -iNo ; iCnt <= iNo ; iCnt++)
+    {
+        printf("%d\t", iCnt);
+    }
+    printf("\n");
+}
+
+///////////////////////////////////////////////////////////
+//
+//  Application to display number line
+//
+///////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter number : ");
+    scanf("%d", &iValue);
+
+    Display(iValue);
+
+    return 0;
+}
+
+///////////////////////////////////////////////////////////
+//
+//  Input :     4
+//  Output :    -4	-3	-2	-1	0	1	2	3	4
+//
+//  Complexity : O(n)
+//
+///////////////////////////////////////////////////////////
