@@ -1,0 +1,58 @@
+// Accept number from user and display below pattern
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Include required header files
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Function name    :   Pattern
+// Input            :   int
+// Output           :   void
+// Description      :   Display Pattern
+// Date             :   12/06/2026 
+// Author           :   Aishwarya Mohan Jadhav       
+//
+/////////////////////////////////////////////////////////////////////////////
+
+void Pattern(
+                int iNo             // Variable to accept input
+            )
+{
+    int iCnt = 0;                   // Loop Counter
+
+    for(iCnt = iNo; iCnt >= 1; iCnt--)
+    {
+        printf("%d\t#\t", iCnt);
+    }
+    printf("\n");
+}
+
+/////////////////////////////////////////////////////////////////
+//
+// Application to display pattern
+//
+/////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;                 // Variable to take input
+
+    printf("Enter number : ");
+    scanf("%d", &iValue);
+
+    Pattern(iValue);                // Function Call
+
+    return 0;
+}
+
+/////////////////////////////////////////////////////////////////
+//
+// Input  : 5 
+// Output : 5	#	4	#	3	#	2	#	1	#
+//
+/////////////////////////////////////////////////////////////////
