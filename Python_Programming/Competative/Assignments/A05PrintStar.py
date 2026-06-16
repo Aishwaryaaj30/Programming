@@ -14,7 +14,7 @@ Algorithm
 #  Function name :  Display
 #  Input         :  -
 #  Output        :  -
-#  Description   :  Performs iteartion to print *
+#  Description   :  Performs iteration to print *
 #  Date          :  11/06/2026
 #  Author        :  Aishwarya Mohan Jadhav
 #
