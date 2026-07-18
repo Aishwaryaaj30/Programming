@@ -1,0 +1,73 @@
+// Write generic program which accept N values from user and search first Occurrence.
+
+//////////////////////////////////////////////////////////////////////////////
+//
+//  Include required header files
+//
+//////////////////////////////////////////////////////////////////////////////
+
+#include<iostream>
+using namespace std;
+
+template <class T>                          // Generic template
+
+//////////////////////////////////////////////////////////////////////////////
+// 
+//  Function name : SearchFirst
+//  Input         : T,  int,  T
+//  Output        : T
+//  Description   : To search first occurrence of the number
+//  Date          : 18/07/2026
+//  Author        : Aishwarya Mohan Jadhav
+//
+//////////////////////////////////////////////////////////////////////////////
+
+int SearchFirst(
+            T *Arr,                         // Generic variable to take first input
+            int iSize,                      // Generic variable to take second input
+            T Occ                           // Generic variable to take third input
+             ) 
+{
+    int iCnt = 0;                           // Loop counter
+    int iFirst = 1;                         // Variable to store first occurrence
+    for(iCnt = 0; iCnt <= iSize; iCnt++)
+    {
+        if(Arr[iCnt] == Occ)
+        {
+           iFirst = iCnt + 1;
+           break;
+        }
+    }
+    return iFirst;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+//
+//  Application to display first occurrence of the number
+//
+//////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iRet = 0;
+
+    int Arr[] = {10,20,30,10,30,40,10,40,10};
+    iRet = SearchFirst(Arr, 9, 40);
+    cout << iRet << endl;
+
+    float Brr[] = {10.5,20.5,30.5,10.5,30.5,40.5,10.5,40.5,10.5};
+    iRet = SearchFirst(Brr, 9, 10.5f);
+    cout << iRet << endl;
+
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+//
+//  Input  :    10 20 30 10 30 40 10 40 10      
+//  Output :    6 
+//
+//  Input  :    10.5 20.5 30.5 10.5 30.5 40.5 10.5 40.5 10.5     
+//  Output :    1
+//
+//////////////////////////////////////////////////////////////////////////////
